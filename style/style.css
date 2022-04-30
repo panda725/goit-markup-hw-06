@@ -282,13 +282,63 @@ ul {
   border: 1px solid var(--modal-close-border);
   border-radius: 50%;
   background-color: inherit;
-  transition: background-color 250ms var(--timing-function-cubic);
+  transition: fill 250ms var(--timing-function-cubic), transform 500ms var(--timing-function-cubic);
   cursor: pointer;
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
-  background-color: var(--modal-close-border);
+  fill: var(--link-hover-color);
+  transform: rotate(180deg);
+}
+
+.form {
+  width: 448px;
+  margin: 40px auto;
+  outline: 1px solid tomato;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.indents {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.modal-form-title {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color-text);
+}
+
+.form-field__lable {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  padding: 11px 12px;
+  outline: 1px solid purple;
+}
+
+.form-field__lable {
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: var(--subtitle-color);
 }
 
 /* backdrop end */

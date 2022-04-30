@@ -67,45 +67,48 @@
             aria-label="Закрыть модальное окно"
             data-modal-close
           >
-            <svg width="11" height="11">
+            <svg class="modal-btn-icon" width="11" height="11">
               <use href="./images/icons.svg#icon-modal-close"></use>
             </svg>
           </button>
 
-          <form class="modal-form" autocomplete="off">
+          <form class="form" autocomplete="off">
             <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
-            <ul class="form-field-list">
-              <li class="form-field-item">
-                <label for="name">Имя</label>
-                <input type="text" id="name" required="" />
-              </li>
-              <li class="form-field-item">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="phone-number" id="tel" required="" />
-              </li>
-              <li class="form-field-item">
-                <label for="email">Почта</label>
-                <input type="email" name="email" id="email" required="" />
-              </li>
-              <li class="form-field-item">
-                <label for="coment">Почта</label>
-                <textarea name="coment" id="coment" placeholder="Введите текст"></textarea>
-              </li>
-              <li class="form-field-checkbox">
-                <input type="checkbox" name="" value="agreement" id="agreement" required="" />
-                <label for="agreement"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a
-                    href="https://www.meme-arsenal.com/memes/84e9b0d51a7ab5a1546db0ae16a8b22e.jpg"
-                    target="_blank"
-                    >Условия договора</a
-                  >
-                </label>
-              </li>
-              <li class="form-field-btn">
-                <button type="submit">Отправить</button>
-              </li>
-            </ul>
+
+            <label class="form-field">
+              <span class="form-field__lable">Имя </span>
+              <input type="text" required />
+            </label>
+
+            <label class="form-field">
+              <span class="form-field__lable">Телефон </span>
+              <input type="tel" name="phone-number" required />
+            </label>
+
+            <label class="form-field">
+              <span class="form-field__lable">Почта </span>
+              <input type="email" name="email" required />
+            </label>
+
+            <label class="form-field">
+              <span class="form-field__lable">Комментарий</span>
+              <textarea name="coment" placeholder="Введите текст"></textarea>
+            </label>
+
+            <label class="form-field indents" for="agreement">
+              <input type="checkbox" name="" value="agreement" required />
+              <span class="form-field__lable">
+                Соглашаюсь с рассылкой и принимаю
+                <a
+                  href="https://www.meme-arsenal.com/memes/84e9b0d51a7ab5a1546db0ae16a8b22e.jpg"
+                  target="_blank"
+                >
+                  Условия договора
+                </a>
+              </span>
+            </label>
+
+            <button type="submit">Отправить</button>
           </form>
         </div>
       </div>
