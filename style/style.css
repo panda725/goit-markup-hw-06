@@ -551,6 +551,7 @@ ul {
 .footer-wrapp-flex {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .page-footer .logo {
   display: inline-block;
@@ -593,7 +594,7 @@ ul {
 }
 
 .lead {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -615,6 +616,7 @@ ul {
 .social-item .social-link:focus {
   background-color: var(--link-hover-color);
 }
+
 .social-link {
   display: flex;
   justify-content: center;
@@ -627,10 +629,65 @@ ul {
 
   transition: background-color 250ms var(--timing-function-cubic);
 }
+
 .social-icon {
   width: 20px;
   height: 20px;
 }
+
+.wrapp-footer-icon {
+  margin-right: 93px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: inherit;
+  color: var(--second-color-text);
+  outline: transparent;
+}
+
+.footer-input::placeholder {
+  color: var(--footer-link-color);
+}
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  transition: background-color 250ms var(--timing-function-cubic);
+
+  background-color: var(--link-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  color: var(--second-color-text);
+  cursor: pointer;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--hero-button-color);
+}
+
+.footer-btn-icon {
+  margin-left: 10px;
+}
+
 /* ===== footer end ===== */
 
 /* ===== PAGE PORTFOLIO START ===== */

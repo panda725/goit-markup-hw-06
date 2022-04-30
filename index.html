@@ -71,6 +71,42 @@
               <use href="./images/icons.svg#icon-modal-close"></use>
             </svg>
           </button>
+
+          <form class="modal-form" autocomplete="off">
+            <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
+            <ul class="form-field-list">
+              <li class="form-field-item">
+                <label for="name">Имя</label>
+                <input type="text" id="name" required="" />
+              </li>
+              <li class="form-field-item">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="phone-number" id="tel" required="" />
+              </li>
+              <li class="form-field-item">
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email" required="" />
+              </li>
+              <li class="form-field-item">
+                <label for="coment">Почта</label>
+                <textarea name="coment" id="coment" placeholder="Введите текст"></textarea>
+              </li>
+              <li class="form-field-checkbox">
+                <input type="checkbox" name="" value="agreement" id="agreement" required="" />
+                <label for="agreement"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a
+                    href="https://www.meme-arsenal.com/memes/84e9b0d51a7ab5a1546db0ae16a8b22e.jpg"
+                    target="_blank"
+                    >Условия договора</a
+                  >
+                </label>
+              </li>
+              <li class="form-field-btn">
+                <button type="submit">Отправить</button>
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
 
@@ -498,6 +534,25 @@
             </li>
           </ul>
         </div>
+
+        <form name="subscribe-form">
+          <b class="lead">Подпишитесь на рассылку</b>
+          <!-- <label class="is-hidden" for="user-email"></label> -->
+          <input
+            class="footer-input"
+            type="email"
+            name="email"
+            id="user-email"
+            placeholder="E-mail"
+            required
+          />
+          <button class="subscribe-btn" type="submit">
+            Подписаться
+            <svg class="footer-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe-btn"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
